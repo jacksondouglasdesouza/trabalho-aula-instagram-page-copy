@@ -1,0 +1,116 @@
+.icon-link-menu{
+    color:#262626;
+}
+
+.img-dimension{
+    transform: scale(1.5);
+    width: 100%;
+}
+
+.topbar-profile-photo, .like-profile-photo{
+    width: 1.6em;
+    height: 1.6em;
+    position: relative;
+}
+
+.stories-profile-photo{
+    width: 56px;
+    height: 56px;
+    position: relative;
+}
+
+.stories-username{
+    font-size: small;
+    text-align: center;
+}
+
+.post-profile-photo{
+    width: 46px;
+    height: 46px;
+    position: relative;
+}
+
+.aaa{
+    text-decoration: none;
+    color: #262626;
+    font-size:medium;
+}
+
+.aaa:hover{
+    color: black;
+}
+
+.textZoom2{
+    text-decoration: none;
+    color: #262626;
+    font-size:small;
+}
+
+.textZoom2:hover{
+    color: black;
+}
+
+.textZoom{
+    font-size: small;
+}
+
+.aaacinza{
+    text-decoration: none;
+    color: #949494;
+    font-size: small;
+}
+
+.aaacinza:hover{
+    color: #949494;
+}
+
+.aaacinzapequeno{
+    text-decoration: none;
+    color: #949494;
+    font-size: x-small;
+}
+
+.aaacinzaMedio{
+    text-decoration: none;
+    color: #949494;
+    font-size: medium;
+    font-weight:400;
+}
+
+.aaacinzaMedioNone{
+    text-decoration: none;
+    color: #262626;
+    font-size: small;
+}
+
+.aaacinzaMedioNone:hover{
+    color: black;
+}
+
+.azulClarinho{
+    text-decoration: none;
+    color: #bfdff2;
+}
+.azulClarinho:hover{
+    color: #bfdff2;
+}
+
+.azulSeguir{
+    text-decoration: none;
+    color: #4fa5e0;
+    font-size: medium;
+}
+
+.azulSeguir:hover{
+    color: #4fa5e0;
+}
+
+.azulSair{
+    color: #4fa5e0;
+    font-size: small;
+    text-decoration: none;
+}
+
+.azulSair:hover{
+    color:#4fa5e0
+}

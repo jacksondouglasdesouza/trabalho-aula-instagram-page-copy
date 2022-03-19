@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css"> <!-- CSS DOCUMENTO RAIZ-->
+    <!-- --- IMPORTAÇÃO CSS BOOTSTRAP --- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Instagram Copy Trabalho IGTI </title>
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container justify-content-center">
+                <div class="d-flex flex-row justify-content-between align-items-center col-9">
+                    <a class="navbar-brand" href="#"> <!--LOGO MARCA INSTAGRAM-->
+                        <img src="/instaimgs/logoInsta/logoMarca__Instagran.png" alt="Logo Marca da Empresa Instagram">
+                    </a>
+                    <form> <!--PESQUISA-->
+                        <input class="form-control p-2 border-0" type="search" placeholder="pesquisar" disabled>
+                    </form>
+                    <div class="d-flex flex-row"> 
+                        <a href="#" class="link-menu icon-link-menu me-3"> <!-- ICON HOME -->
+                            <svg aria-label="Página inicial" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                <path d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="link-menu icon-link-menu me-3"> <!-- ICON MESSENGER-->
+                            <svg aria-label="Direct" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                            </svg>
+                        </a>
+                        <a href="#" class="link-menu icon-link-menu me-3"> <!-- ICON PLUS + -->
+                            <svg aria-label="Nova publicação" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                <path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="link-menu icon-link-menu me-3"> <!-- ICON BÚSSOLA-->
+                            <svg aria-label="Encontrar pessoas" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                <polygon fill="none" points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon><polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon><circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="link-menu icon-link-menu me-3"> <!-- ICON CORAÇÃO-->
+                            <svg aria-label="Feed de atividades" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                <path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="link-menu"> <!-- FOTO NAVBAR DONO PERFIL-->
+                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border topbar-profile-photo">
+                            <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__001.png" alt="Foto do perfil proprietário da conta">
+                            </div>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container d-flex justify-content-center mt-4">
+                <div class="col-9">
+                    <div class="row">
+                        <section class="col-8">
+                            <div class="card"> <!-- BOX DE STORIES-->
+                                <div class="card-body d-flex justify-content-start">
+                                    <div class="d-flex flex-column justify-content-center me-2"> <!-- PERFIL PERSONA 001-->
+                                        <a href="#">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger stories-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__001.png" alt="Foto do stories persona 001">
+                                            </div>
+                                        </a>
+                                        <p class="stories-username">Lucas</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center me-2"> <!-- PERFIL PERSONA 002-->
+                                        <a href="#">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger stories-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__002.png" alt="Foto do stories persona 002">
+                                            </div>
+                                        </a>
+                                        <p class="stories-username">Luana</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center me-2"> <!-- PERFIL PERSONA 003-->
+                                        <a href="#">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger stories-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__003.png" alt="Foto do stories persona 003">
+                                            </div>
+                                        </a>
+                                        <p class="stories-username">Paula</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center me-2"> <!-- PERFIL PERSONA 004-->
+                                        <a href="#">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger stories-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__004.png" alt="Foto do stories persona 004">
+                                            </div>
+                                        </a>
+                                        <p class="stories-username">Mathias</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center me-2"> <!-- PERFIL PERSONA 005-->
+                                        <a href="#">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger stories-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__005.png" alt="Foto do stories persona 005">
+                                            </div>
+                                        </a>
+                                        <p class="stories-username">Carlos</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center me-2"> <!-- PERFIL PERSONA 006-->
+                                        <a href="#">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger stories-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__006.png" alt="Foto do stories persona 006">
+                                            </div>
+                                        </a>
+                                        <p class="stories-username">Kamal</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center me-2"> <!-- PERFIL PERSONA 007-->
+                                        <a href="#">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger stories-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__007.png" alt="Foto do stories persona 007">
+                                            </div>
+                                        </a>
+                                        <p class="stories-username">Brenda</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center me-2"> <!-- PERFIL PERSONA 008-->
+                                        <a href="#">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger stories-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__008.png" alt="Foto do stories persona 008">
+                                            </div>
+                                        </a>
+                                        <p class="stories-username">Lexa</p>
+                                    </div>
+                                </div>                                
+                            </div>
+    
+                            <!-- NEWS BAR - POSTS - LINHA DO TEMPO-->
+                            <div class="d-flex flex-column my-4"> <!---------- COMEÇO LINHA DO TEMPO 001 --------------->
+                                <div class="card">
+                                    <div class="card-header bg-white"> <!-- PARDE DA MINIATURA FOTO DONO PERFIL-->
+                                        <div class="d-flex flex-row align-intems-center">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger post-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__001.png" alt="Foto Linha do tempo persona 001 - principal dona perfil">
+                                            </div>
+                                            <p class="ms-1 mb-0 p-2"> <a href="#" class="aaa">Lucas</a></p>                                            
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0"> <!-- FOTO DA PUBLICAÇÃO DONO PERFIL-->
+                                        <div class="ratio ratio-1x1">
+                                            <img src="/instaimgs/imgsPosts/post__005.jpg" alt="Fotos dos Balões">
+                                        </div>
+                                    </div>
+                                    <div class="p-3"> <!-- OPÇÕES DE INTERAÇÕES CLIENTE ->> SISTEMA -->
+                                        <div class="d-flex flex-row justify-content-between align-items-center">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <a href="#" class="me-3"> <!-- GOSTAR -->
+                                                    <svg aria-label="Curtir" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                                        <path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="me-3"> <!-- COMENTAR -->
+                                                <svg aria-label="Comentar" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                                    <path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+                                                </svg>
+                                                </a>
+                                                <a href="#" class="me-3"> <!-- COMPARTILHAR -->
+                                                    <svg aria-label="Compartilhar publicação" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                                        <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <a href="#"> <!-- FAVORITAR -->
+                                                <svg aria-label="Salvar" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                                    <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="px-3 pb-3 border-bottom">
+                                        <div class="d-flex flex-row align-items-center"> <!-- CURTIDAS DOS AMIGOS -->
+                                            <a href="#"> <!-- FOTO AMIGO QUE GOSTOU -->
+                                                <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-gray-100 like-profile-photo">
+                                                    <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__008.png" alt="Foto do perfil amigo que gosta">
+                                                </div>
+                                            </a>
+                                            <!-- MOSTRA O TOTAL DE PESSOAS QUE GOSTARAM DA PUBLICAÇÃO JUNTO COM FOTO-->
+                                            <p class="ms-2 mb-0">Curtido por <a href="#" class="aaa">Lexa</a> e outras <a href="#" class="aaa">806.376 pessoas</a></p>
+                                        </div>
+                                            <!-- MOSTRA OS COMENTÁRIOS GERAIS E LINK PARA OUTROS COMENTÁRIOS-->
+                                            <p class="mb-0 mt-2 textZoom"><a href="#" class="aaa">Lucas</a> &nbsp; " Sonhar é bom, é como voar suspensa por balões." Clarice Lispector</p> <!-- DESCRIÇÃO DA FOTO, TEXTO DO PROPRIETÁRIO DA FOTO-->
+                                            <p class="mb-0"> <a href="#" class="aaacinza">Ver todos os 12.570 comentários</a></p>
+                                            <p class="mb-0 textZoom"> <a href="#" class="aaa">Brenda</a> 🔥🔥🔥🔥&nbsp; Muito bom</p>
+                                            <p class="mb-0 textZoom"> <a href="#" class="aaa">Paula</a> Nossa Amei...&nbsp;❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</p>
+                                            <p class="mb-0 aaacinza">HÁ 15 HORAS</p>
+                                    </div>
+                                            <!-- CARD DE PUBLICAÇÃO DE COMENTÁRIOS E REAÇÕES -->
+                                    <div class="m-3 d-flex flex-row align-items-center justify-content-between">
+                                        <svg aria-label="Emoji" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                            <path d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"></path>
+                                        </svg>
+                                        <input class="aaacinza form-control border-0" type="text" placeholder="Adicione um comentário...">
+                                        <a href="#" class="azulClarinho">Publicar</a>
+                                    </div>
+                                </div>
+                            </div> <!-- ---------------------------- FIM LINHA DO TEMPO 0001 --------------------------------->
+
+                            <div class="d-flex flex-column my-4"> <!-- ************* COMEÇO DA LINHA DO TEMPO 0002 ****************** -->
+                                <div class="card">
+                                    <div class="card-header bg-white"> <!-- PARDE DA MINIATURA FOTO DE OUTRO PERFIL AMIGO-->
+                                        <div class="d-flex flex-row align-intems-center">
+                                            <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger post-profile-photo">
+                                                <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__006.png" alt="Foto Linha do tempo persona 001 - principal dona perfil">
+                                            </div>
+                                            <p class="ms-1 mb-0 p-2"> <a href="#" class="aaa">Kamal</a></p>                                       
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0"> <!-- FOTO DA PUBLICAÇÃO DO PERFIL DO AMIGO-->
+                                        <div class="ratio ratio-1x1">
+                                            <img src="/instaimgs/imgsPosts/post__007.jpg" alt="Fotos dos gatos">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="p-3"> <!-- OPÇÕES DE INTERAÇÕES CLIENTE ->> SISTEMA -->
+                                        <div class="d-flex flex-row justify-content-between align-items-center">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <a href="#" class="me-3"> <!-- GOSTAR -->
+                                                    <svg aria-label="Curtir" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                                        <path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="me-3"> <!-- COMENTAR -->
+                                                <svg aria-label="Comentar" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                                    <path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+                                                </svg>
+                                                </a>
+                                                <a href="#" class="me-3"> <!-- COMPARTILHAR -->
+                                                    <svg aria-label="Compartilhar publicação" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                                        <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <a href="#"> <!-- FAVORITAR -->
+                                                <svg aria-label="Salvar" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                                    <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="px-3 pb-3 border-bottom">
+                                        <div class="d-flex flex-row align-items-center"> <!-- CURTIDAS DOS AMIGOS -->
+                                            <a href="#"> <!-- FOTO AMIGO QUE GOSTOU -->
+                                                <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-gray-100 like-profile-photo">
+                                                    <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__004.png" alt="Foto do perfil amigo que gosta">
+                                                </div>
+                                            </a>
+                                            <!-- MOSTRA O TOTAL DE PESSOAS QUE GOSTARAM DA PUBLICAÇÃO JUNTO COM FOTO-->
+                                            <p class="ms-2 mb-0">Curtido por <a href="#" class="aaa">Mathias</a> e outras <a href="#" class="aaa">10.806.376 pessoas</a></p>
+                                        </div>
+                                            <!-- MOSTRA OS COMENTÁRIOS GERAIS E LINK PARA OUTROS COMENTÁRIOS E DESCRIÇÃO OU TEXTO DO DONO DA PUBLICAÇÃO-->
+                                            <p class="mb-0 mt-2 textZoom"><a href="#" class="aaa">Kamal</a> &nbsp; De todas as criaturas de Deus, somente uma não pode ser castigada. Essa é o gato. Se fosse possível cruzar o homem com o gato, melhoraria o homem, mas pioraria o gato.</p>
+                                            <p class="mb-0"> <a href="#" class="aaacinza">Ver todos os 1.012.570 comentários</a></p>
+                                            <p class="mb-0 textZoom"> <a href="#" class="aaa">Carlos</a> 🐱🐱🐱🐱🐱&nbsp; Seus Gatinhos são lindos...</p>
+                                            <p class="mb-0 textZoom"> <a href="#" class="aaa">Luana</a>❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ &nbsp;Que fofuras!!!!</p>
+                                            <p class="mb-0 aaacinza">HÁ 18 HORAS</p>
+                                    </div>
+
+                                            <!-- CARD DE PUBLICAÇÃO DE COMENTÁRIOS E REAÇÕES -->
+                                    <div class="m-3 d-flex flex-row align-items-center justify-content-between">
+                                        <svg aria-label="Emoji" class="_8-yf5 " color="#262626" fill="#262626" height="1.6em" role="img" viewBox="0 0 24 24" width="1.6em">
+                                            <path d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"></path>
+                                        </svg>
+                                        <input class="aaacinza form-control border-0" type="text" placeholder="Adicione um comentário...">
+                                        <a href="#" class="azulClarinho">Publicar</a>
+                                    </div>
+                                </div>
+                            </div> <!-- **************************************** FIM 002****************************************** -->
+                        </section>
+
+                        <!-- BARRA LATERAL DA PÁGINA-->
+                        <aside class="col-4">
+                            <div class="d-flex flex-row align-items-center pt-4">
+                                <a href="#">
+                                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center stories-profile-photo">
+                                        <img class="img-dimension" src="/instaimgs/imgsProfiles/avatar__001.png" alt="Foto do stories persona 001">
+                                    </div>
+                                </a>
+                                <div>
+                                    <p class="ms-3 mb-0 p-0"> <a href="#" class="aaa">lucas_aluno_igti</a></p>
+                                    <p class="ms-3 mb-0 mt-0 aaacinza p-0">© JACKSON DOUGLAS</p>
+                                </div>
+                                <p class="mt-2"><a href="#" class="azulSair">Mudar</a></p>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mt-4">
+                                <p class="aaacinzaMedio">
+                                    Sugestões para você
+                                </p>
+                                <p class=".aaacinzaMedio">
+                                    <a href="#" class="aaacinzaMedioNone">Ver tudo</a> 
+                                </p>
+                            </div>
+                            <!--------- INICIO DO BLOCO DE SUGESTÕES DE CONTATOS PARA SEGUIR ----- -------- -->
+                            <div class="d-flex flex-row justify-content-between mb-0"> <!-- PERSONA 01 -->
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center post-profile-photo">
+                                        <img class="img-dimension" src="/instaimgs/sugest/sugestão__003.png" alt="Persona sugestão 003">
+                                    </div>
+                                    <div>
+                                    <p class="ms-1 mb-0 p-1"> <a href="#" class="aaa">joeldasilvaloureiro</a></p>
+                                    <p class="ms-3 mb-0 mt-0 aaacinza p-0">Seguido(a) por Luana</p>
+                                    </div>
+                                </div>
+                                <p class="mt-2"><a href="#" class="azulSeguir">seguir</a></p>                               
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mb-0"> <!-- PERSONA 02 -->
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center post-profile-photo">
+                                        <img class="img-dimension" src="/instaimgs/sugest/sugestão__004.png" alt="Persona sugestão 004">
+                                    </div>
+                                    <div>
+                                    <p class="ms-1 mb-0 p-1"> <a href="#" class="aaa">daniel__kuss</a></p>
+                                    <p class="ms-3 mb-0 mt-0 aaacinza p-0">Seguido(a) por Brenda</p>
+                                    </div>
+                                </div>
+                                <p class="mt-2"><a href="#" class="azulSeguir">seguir</a></p>                               
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mb-0"> <!-- PERSONA 03 -->
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center post-profile-photo">
+                                        <img class="img-dimension" src="/instaimgs/sugest/sugestão__005.png" alt="Persona sugestão 005">
+                                    </div>
+                                    <div>
+                                    <p class="ms-1 mb-0 p-1"> <a href="#" class="aaa">zecadosambabrasil</a></p>
+                                    <p class="ms-3 mb-0 mt-0 aaacinza p-0">Seguido(a) por Brenda</p>
+                                    </div>
+                                </div>
+                                <p class="mt-2"><a href="#" class="azulSeguir">seguir</a></p>                               
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mb-0"> <!-- PERSONA 04 -->
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center post-profile-photo">
+                                        <img class="img-dimension" src="/instaimgs/sugest/sugestão__006.png" alt="Persona sugestão 006">
+                                    </div>
+                                    <div>
+                                    <p class="ms-1 mb-0 p-1"> <a href="#" class="aaa">gustavodofreefire</a></p>
+                                    <p class="ms-3 mb-0 mt-0 aaacinza p-0">Seguido(a) por Mathias</p>
+                                    </div>
+                                </div>
+                                <p class="mt-2"><a href="#" class="azulSeguir">seguir</a></p>                               
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mb-0"> <!-- PERSONA 05 -->
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center post-profile-photo">
+                                        <img class="img-dimension" src="/instaimgs/sugest/sugestão__007.png" alt="Persona sugestão 007">
+                                    </div>
+                                    <div>
+                                    <p class="ms-1 mb-0 p-1"> <a href="#" class="aaa">gina__riodejaneiro</a></p>
+                                    <p class="ms-3 mb-0 mt-0 aaacinza p-0">Seguido(a) por Kamal</p>
+                                    </div>
+                                </div>
+                                <p class="mt-2"><a href="#" class="azulSeguir">seguir</a></p>                               
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mb-0"> <!-- PERSONA 06 -->
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center post-profile-photo">
+                                        <img class="img-dimension" src="/instaimgs/sugest/sugestão__008.png" alt="Persona sugestão 008">
+                                    </div>
+                                    <div>
+                                    <p class="ms-1 mb-0 p-1"> <a href="#" class="aaa">rasta_de_floripa</a></p>
+                                    <p class="ms-3 mb-0 mt-0 aaacinza p-0">Seguido(a) por Paula</p>
+                                    </div>
+                                </div>
+                                <p class="mt-2"><a href="#" class="azulSeguir">seguir</a></p>                               
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mb-0"> <!-- PERSONA 07 -->
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center post-profile-photo">
+                                        <img class="img-dimension" src="/instaimgs/sugest/sugestão__009.png" alt="Persona sugestão 009">
+                                    </div>
+                                    <div>
+                                    <p class="ms-1 mb-0 p-1"> <a href="#" class="aaa">guria_da_china</p>
+                                    <p class="ms-3 mb-0 mt-0 aaacinza p-0">Seguido(a) por Lexa</p>
+                                    </div>
+                                </div>
+                                <p class="mt-2"><a href="#" class="azulSeguir">seguir</a></p>                               
+                            </div>
+                            <div class="d-flex flex-row justify-content-between mb-0"> <!-- PERSONA 08 -->
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center post-profile-photo">
+                                        <img class="img-dimension" src="/instaimgs/sugest/sugestão__010.png" alt="Persona sugestão 010">
+                                    </div>
+                                    <div>
+                                    <p class="ms-1 mb-0 p-1"> <a href="#" class="aaa">jessicasaopaulobrasil</p>
+                                    <p class="ms-3 mb-0 mt-0 aaacinza p-0">Seguido(a) por Carlos</p>
+                                    </div>
+                                </div>
+                                <p class="mt-2"><a href="#" class="azulSeguir">seguir</a></p>                               
+                            </div>
+                            <!-- FINAL BLOCO DE SUGESTÕES DE CONTATOS PARA SEGUIR----- -------- -->
+
+                            <br><br><br><br><br><br>
+                            
+                            <!-- -------------- INICIO DAS INFORMAÇÕES META ---------------- -->
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="ms-3 mb-0 mt-0 aaacinzapequeno p-0"> Sobre &nbsp;.&nbsp; Ajuda &nbsp;. &nbsp;Imprensa &nbsp;. &nbsp;API &nbsp;. &nbsp;Carreiras</p>
+                                    </div>
+                                </div>                             
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="ms-3 mb-0 mt-0 aaacinzapequeno p-0"> Privacidade &nbsp;. &nbsp;Termos &nbsp;. &nbsp;Localizações</p>
+                                    </div>
+                                </div>                             
+                            </div>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="ms-3 mb-0 mt-0 aaacinzapequeno p-0"> Principais &nbsp;. &nbsp;contas &nbsp;. &nbsp;Hashtags &nbsp;. &nbsp;Idioma</p>
+                                    </div>
+                                </div>                             
+                            </div>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="ms-3 mb-0 mt-0 aaacinzapequeno p-0"> © 2022 INSTAGRAM FROM META </p>
+                                    </div>
+                                </div>                             
+                            </div> <!-- -------- FIM INFORMAÇÕES META ---------- -->
+                            <br>
+                            <!-- LOGOMARCA EMPRESA META -->
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img class="img-dimension" width="81" height="10" src="https://z-p3-scontent.fbfh1-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-5&_nc_sid=ad8a9d&_nc_eui2=AeFPoYW7oU0-cjBjizseP5uEJoe3Jp6RrsImh7cmnpGuwmpdG-IwWuIrCccefkNRV4pP2MMYjFvOltPINuxE0pXg&_nc_ohc=fECqJzkNYSYAX9ayurp&_nc_ht=z-p3-scontent.fbfh1-1.fna&oh=00_AT-RNR5mwoUHyEuD5XhGO0uvF7uMHFi_ghzM1vc9SEu9Ow&oe=623AA6B9" alt="Empresa meta dona do Instagram">
+                                    </div>
+                                </div>                             
+                            </div>
+                            <br> <!-- CRÉDITOS DE DESENVOLVIMENTO -->
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="ms-3 mb-0 mt-0 aaacinzapequeno p-0"> Desenvolvido por © JACKSON DOUGLAS DE SOUZA</p>
+                                    </div>
+                                </div>                             
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!-- JAVASCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
